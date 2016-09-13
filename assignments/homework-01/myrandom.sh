@@ -1,2 +1,2 @@
 #!/bin/bash
-/usr/dict/words | myrandom.sh
+cat /usr/share/dict/words | shuf -n 1
