@@ -1,14 +1,14 @@
 #Multi-tasking
-Definition - A mode of operation that provides for the concurrent performance or interleaved execution of two or more computer tasks.
+**Definition** - A mode of operation that provides for the concurrent performance or interleaved execution of two or more computer tasks.
 
 #Multi-programming
-Definition - A mode of operation that provides for the interleaved execution of two or more computer programs by a single processor.
+**Definition** - A mode of operation that provides for the interleaved execution of two or more computer programs by a single processor.
 
 ##Multi-processing
-Definition - A mode of operation that provides for parallel processing by two or more processors of a multiprocessor.
+**Definition** - A mode of operation that provides for parallel processing by two or more processors of a multiprocessor.
 
 #Multi-threaded
-Definition - The ability of a central processing unit (CPU) or a single core in a multi-core processor to execute multiple processes or threads concurrently, appropriately supported by the operating system.
+**Definition** - The ability of a central processing unit (CPU) or a single core in a multi-core processor to execute multiple processes or threads concurrently, appropriately supported by the operating system.
 
 #Review Questions from Chapter 3
 
@@ -17,10 +17,10 @@ The behavior of an individual process by listing the sequence of instructions th
 
 ##What common events lead to the creation of a process?
 
-  * New batch job - The OS is provided with a batch job control stream, usually on tape or disk. When the OS is prepared to take on new      work, it will read the next sequence of job control commands.
-  * Interactive log-on – A user at a terminal logs on to the system.
-  * Created by OS to provide a  service – The OS can create a process to perform a function on behalf of a user program, without the          user having to wait ( e.g., a process to control printing).   
-  * Spawned by existing process – For purposes of modularity or to explicit parallelism, a user program can dictate the creation of a        number of processes. 
+  * **New batch job** - The OS is provided with a batch job control stream, usually on tape or disk. When the OS is prepared to take on     new work, it will read the next sequence of job control commands.
+  * **Interactive log-on** – A user at a terminal logs on to the system.
+  * **Created by OS to provide a  service** – The OS can create a process to perform a function on behalf of a user program, without the     user having to wait ( e.g., a process to control printing).   
+  * **Spawned by existing process** – For purposes of modularity or to explicit parallelism, a user program can dictate the creation of     a number of processes. 
 
 ##What does it mean to preempt a process?
 An OS interrupt of a process because an event upon which another process has been waiting on occurred putting it in a ready state.
@@ -56,9 +56,9 @@ Interrupt is external to the execution of the current instruction, whereas a tra
 
 ##Give three examples of an interrupt.
 
-  * Clock Interrupt - The OS determines whether the currently running process has been executing for the maximum allowable unit of time,      referred to as a time slice. That is, a time slice is the maximum amount of time that a process can execute before being                interrupted. If so, this process must be switched to a ready state and another process dispatched.   
-  * I/O Interrupt – The OS determines what I/O action has occurred. If the I/O action constitutes an event for which one or more              processes are waiting, then the OS moves all of the corresponding blocked processes to the ready state. The OS must then decide        whether to resume execution of the process currently in the running state or to preempt that process for a higher-priority ready        process.   
-  * Memory Fault – The processor encounters a virtual memory address reference for a word that is not in main memory. The OS must bring      in the block of memory containing the reference from secondary memory to main memory. After the I/O request is issued to bring in      the block of memory, the process with the memory fault is placed in a blocked state; the OS then performs a process switch to          resume execution of another process. After the desired block is brought into memory, that process is placed in the ready state.
+  * **Clock Interrupt** - The OS determines whether the currently running process has been executing for the maximum allowable unit of       time, referred to as a time slice. That is, a time slice is the maximum amount of time that a process can execute before being         interrupted. If so, this process must be switched to a ready state and another process dispatched.   
+  * **I/O Interrupt** – The OS determines what I/O action has occurred. If the I/O action constitutes an event for which one or more         processes are waiting, then the OS moves all of the corresponding blocked processes to the ready state. The OS must then decide         whether to resume execution of the process currently in the running state or to preempt that process for a higher-priority ready       process.   
+  * **Memory Fault** – The processor encounters a virtual memory address reference for a word that is not in main memory. The OS must       bring in the block of memory containing the reference from secondary memory to main memory. After the I/O request is issued to         bring in the block of memory, the process with the memory fault is placed in a blocked state; the OS then performs a process switch     to resume execution of another process. After the desired block is brought into memory, that process is placed in the ready state.
 
 ##What is the difference between a mode switch and a process switch?
 
