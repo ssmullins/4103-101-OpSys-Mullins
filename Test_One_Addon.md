@@ -1,14 +1,14 @@
 #Multi-tasking
 ##Definition
-  A mode of operation that provides for the concurrent performance or interleaved execution of two or more computer tasks.
+A mode of operation that provides for the concurrent performance or interleaved execution of two or more computer tasks.
 
 #Multi-programming
 ##Definition
-  A mode of operation that provides for the interleaved execution of two or more computer programs by a single processor.
+A mode of operation that provides for the interleaved execution of two or more computer programs by a single processor.
 
 ##Multi-processing
 ##Definition
-  A mode of operation that provides for parallel processing by two or more processors of a multiprocessor.
+A mode of operation that provides for parallel processing by two or more processors of a multiprocessor.
 
 #Multi-threaded
 ##Definition
